@@ -22,6 +22,7 @@ Set-CsTeamsEventsPolicy [-AllowWebinars <String>] [-EventAccessType <String>] [-
  [-TranscriptionForTownhall <String>] [-TranscriptionForWebinar <String>]
  [-UseMicrosoftECDN <Boolean>]
  [-Identity] <String> [-Force] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ImmersiveEvents <String>]
 ```
 
 ## DESCRIPTION
@@ -200,6 +201,24 @@ Aliases:
 Required: False
 Position: 1
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImmersiveEvents
+This setting governs if a user can create town halls using Teams Events.
+Possible values are:
+ - **Enabled**: Enables creating Immersive Events.
+ - **Disabled**: Disables creating Immersive Events.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: Enabled
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
